@@ -1,0 +1,7 @@
+[submodule "pysonic"]
+	path = pysonic
+	url = git@github.com:lrusak/py-sonic.git
+	branch = python3
+[submodule "vlcpython"]
+	path = vlcpython
+	url = http://git.videolan.org/git/vlc/bindings/python.git

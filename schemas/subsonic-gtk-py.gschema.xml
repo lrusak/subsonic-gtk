@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="apps.subsonic-gtk-py" path="/apps/subsonic-gtk-py/">
+    <key type="s" name="user">
+      <default>"user"</default>
+      <summary>The username passed to subsonic</summary>
+      <description>Subsonic user</description>
+    </key>
+    <key type="s" name="passwd">
+      <default>"password"</default>
+      <summary>The password attributed to the subsonic user</summary>
+      <description>Subsonic password</description>
+    </key>
+    <key type="s" name="server">
+      <default>"http://localhost"</default>
+      <summary>The subsonic server address</summary>
+      <description>The address used to access the subsonic server</description>
+    </key>
+    <key type="i" name="port">
+      <range min="0" max="10000"/>
+      <default>4040</default>
+      <summary>The subsonic server port</summary>
+      <description>The port used to access the subsonic sever</description>
+    </key>
+    <key type="s" name="path">
+      <default>"/rest"</default>
+      <summary>The path used by the subsonic server</summary>
+      <description>The path only needs to be changed if you are running your subsonic server under a different root path.</description>
+    </key>
+    <key type="b" name="insecure">
+    	<default>false</default>
+    	<description>This option allows the use of invalid certificates (self signed)</description></key>
+  </schema>
+</schemalist>
